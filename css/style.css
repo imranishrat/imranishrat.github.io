@@ -1,3 +1,13 @@
+/* =========================================================
+   DR IMRAN ISHRAT — ACADEMIC WEBSITE
+   Clean, restrained faculty-style design
+   ========================================================= */
+
+
+/* =========================================================
+   1. BASE
+   ========================================================= */
+
 * {
     box-sizing: border-box;
 }
@@ -8,16 +18,18 @@ html {
 
 body {
     margin: 0;
+    padding: 0;
+
     background: #ffffff;
-    color: #30343b;
+    color: #333333;
+
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 1.65;
+    font-size: 14px;
+    line-height: 1.55;
 }
 
-.container {
-    width: min(1050px, calc(100% - 50px));
-    margin: 0 auto;
+img {
+    max-width: 100%;
 }
 
 a {
@@ -29,16 +41,65 @@ a:hover {
     text-decoration: underline;
 }
 
+p {
+    margin: 0 0 14px;
+}
 
-/* HEADER */
+
+/* =========================================================
+   2. MAIN CONTAINER
+   ========================================================= */
+
+.container {
+    width: min(1000px, calc(100% - 50px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   3. TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: #222222;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+}
+
+h2 {
+    font-size: 19px;
+    line-height: 1.3;
+    margin: 0 0 18px;
+}
+
+h3 {
+    font-size: 15px;
+    line-height: 1.35;
+    margin: 0 0 6px;
+}
+
+
+/* =========================================================
+   4. HEADER
+   ========================================================= */
 
 .site-header {
-    border-bottom: 1px solid #e2e2e2;
     background: #ffffff;
+    border-bottom: 1px solid #dddddd;
 }
 
 .header-inner {
-    min-height: 62px;
+    min-height: 58px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,18 +107,30 @@ a:hover {
 
 .site-name {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 19px;
+    font-size: 18px;
     color: #222222;
+    letter-spacing: 0.2px;
 }
+
+.site-name:hover {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   5. NAVIGATION
+   ========================================================= */
 
 .main-nav {
     display: flex;
-    gap: 21px;
+    align-items: center;
+    gap: 20px;
 }
 
 .main-nav a {
-    font-size: 13px;
+    font-size: 12px;
     color: #444444;
+    white-space: nowrap;
 }
 
 .main-nav a:hover {
@@ -66,73 +139,156 @@ a:hover {
 }
 
 
-/* HERO */
+/* =========================================================
+   6. GENERAL HERO / PAGE INTRO
+   ========================================================= */
 
 .hero {
-    padding: 42px 0;
+    padding: 32px 0;
     border-bottom: 1px solid #eeeeee;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 180px;
-    gap: 55px;
-    align-items: center;
-}
-
 .hero-label {
-    margin-bottom: 8px;
-    font-size: 12px;
-    color: #6b1e2b;
-    letter-spacing: 1px;
+    margin-bottom: 7px;
+
+    font-size: 10px;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
+
+    color: #6b1e2b;
 }
 
 .hero-title {
-    margin: 0 0 6px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: normal;
-    color: #222222;
-    line-height: 1.2;
-}
 
-.hero-position {
-    margin-bottom: 17px;
-    font-size: 16px;
-    color: #666666;
+    color: #222222;
+
+    margin: 0 0 10px;
 }
 
 .hero-description {
-    max-width: 680px;
-    font-size: 15px;
-    color: #444444;
+    max-width: 700px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #555555;
 }
 
 
-/* PHOTO */
+/* =========================================================
+   7. ACADEMIC HOMEPAGE INTRODUCTION
+   ========================================================= */
 
+.academic-intro {
+    padding: 32px 0 36px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.intro-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 150px;
+
+    gap: 55px;
+
+    align-items: start;
+}
+
+.academic-label {
+    margin-bottom: 7px;
+
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    color: #6b1e2b;
+}
+
+.academic-intro h1 {
+    margin: 0 0 7px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 26px;
+    font-weight: normal;
+
+    line-height: 1.2;
+
+    color: #222222;
+}
+
+.academic-position {
+    margin-bottom: 18px;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    color: #666666;
+}
+
+.academic-statement {
+    max-width: 700px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #333333;
+}
+
+.intro-text > p:not(.academic-position):not(.academic-statement) {
+    max-width: 700px;
+
+    color: #555555;
+}
+
+
+/* =========================================================
+   8. PROFILE PHOTO
+   ========================================================= */
+
+.intro-photo img,
 .profile-photo {
-    width: 180px;
-    height: 220px;
+    width: 150px;
+    height: 185px;
+
     object-fit: cover;
+
     display: block;
 }
 
 
-/* BUTTONS */
+/* =========================================================
+   9. BUTTONS
+   ========================================================= */
 
 .button-row {
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .button {
     display: inline-block;
-    padding: 6px 13px;
-    margin-right: 6px;
+
+    padding: 5px 11px;
+
+    margin-right: 5px;
+
     border: 1px solid #6b1e2b;
-    font-size: 13px;
+
+    font-size: 12px;
+
     color: #6b1e2b;
+}
+
+.button:hover {
+    background: #6b1e2b;
+    color: #ffffff;
+
+    text-decoration: none;
 }
 
 .button-filled {
@@ -141,103 +297,335 @@ a:hover {
 }
 
 
-/* SECTIONS */
+/* =========================================================
+   10. GENERAL SECTIONS
+   ========================================================= */
 
-.section {
-    padding: 42px 0;
+.section,
+.academic-section {
+    padding: 32px 0;
 }
 
-.section-light {
+.section-light,
+.academic-section-grey {
     background: #fafafa;
 }
 
-h2 {
-    margin: 0 0 18px;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 24px;
-    font-weight: normal;
-    color: #222222;
-}
+.academic-section h2 {
+    margin: 0 0 17px;
 
-h3 {
-    margin: 0 0 7px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 18px;
+
+    font-size: 19px;
     font-weight: normal;
+
     color: #222222;
 }
 
 
-/* RESEARCH */
+/* =========================================================
+   11. RESEARCH INTERESTS
+   ========================================================= */
+
+.research-list {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 50px;
+}
+
+.research-list > div {
+    padding: 16px 0;
+
+    border-top: 1px solid #dddddd;
+}
+
+.research-list h3 {
+    margin: 0 0 5px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+    font-weight: normal;
+
+    color: #222222;
+}
+
+.research-list p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    color: #606060;
+}
+
+
+/* =========================================================
+   12. RESEARCH GRID
+   ========================================================= */
 
 .research-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
-    column-gap: 55px;
-    margin-top: 25px;
+
+    column-gap: 50px;
+
+    margin-top: 20px;
 }
 
 .research-item {
-    padding: 18px 0;
+    padding: 16px 0;
+
     border-top: 1px solid #dddddd;
+}
+
+.research-item h3 {
+    font-size: 15px;
 }
 
 .research-item p {
     margin-bottom: 0;
-    color: #5a6066;
+
+    font-size: 13px;
+
+    color: #606060;
 }
 
 
-/* FEATURED RESEARCH */
+/* =========================================================
+   13. FEATURED RESEARCH
+   ========================================================= */
 
 .featured-research {
     max-width: 780px;
-    padding-left: 20px;
+
+    padding-left: 18px;
+
     border-left: 2px solid #6b1e2b;
 }
 
 .featured-research h3 {
-    font-size: 21px;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.featured-research p {
+    font-size: 14px;
 }
 
 
-/* HIGHLIGHTS */
+/* =========================================================
+   14. RESEARCH SUBTITLE
+   ========================================================= */
+
+.research-subtitle {
+    margin-bottom: 15px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    color: #555555;
+}
+
+.research-description {
+    max-width: 760px;
+}
+
+
+/* =========================================================
+   15. RESEARCH PROGRAMME
+   ========================================================= */
+
+.programme-list {
+    max-width: 850px;
+}
+
+.programme-item {
+    display: grid;
+
+    grid-template-columns: 38px 1fr;
+
+    gap: 8px;
+
+    padding: 16px 0;
+
+    border-top: 1px solid #dddddd;
+}
+
+.programme-item > span {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+
+    color: #6b1e2b;
+}
+
+.programme-item h3 {
+    margin-bottom: 5px;
+
+    font-size: 15px;
+}
+
+.programme-item p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #606060;
+}
+
+
+/* =========================================================
+   16. ACADEMIC PROFILE
+   ========================================================= */
+
+.profile-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.profile-grid > div {
+    padding-top: 10px;
+
+    border-top: 1px solid #cccccc;
+}
+
+.profile-grid strong {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+
+    font-weight: normal;
+
+    color: #222222;
+}
+
+.profile-grid p {
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    color: #666666;
+}
+
+
+/* =========================================================
+   17. PUBLICATIONS
+   ========================================================= */
+
+.publication {
+    padding: 15px 0;
+
+    border-top: 1px solid #dddddd;
+}
+
+.publication-title {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 15px;
+
+    color: #222222;
+}
+
+.publication-meta {
+    font-size: 12px;
+
+    color: #666666;
+}
+
+
+/* =========================================================
+   18. SECTION LABEL
+   ========================================================= */
+
+.section-label {
+    margin-bottom: 8px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+
+    color: #6b1e2b;
+}
+
+
+/* =========================================================
+   19. HIGHLIGHTS
+   ========================================================= */
 
 .highlights {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 25px;
 }
 
 .highlight {
-    padding-top: 10px;
-    border-top: 1px solid #6b1e2b;
+    padding-top: 9px;
+
+    border-top: 1px solid #cccccc;
 }
 
 .highlight-number {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 21px;
+
+    font-size: 18px;
+
     color: #222222;
 }
 
 .highlight-label {
     font-size: 12px;
+
     color: #666666;
 }
 
 
-/* FOOTER */
+/* =========================================================
+   20. ACADEMIC FOOTER
+   ========================================================= */
 
+.academic-footer,
 .site-footer {
-    margin-top: 25px;
-    padding: 30px 0;
+    margin-top: 20px;
+
+    padding: 27px 0;
+
     border-top: 1px solid #dddddd;
+
+    font-size: 12px;
+
     color: #666666;
-    font-size: 13px;
+}
+
+.academic-footer strong,
+.site-footer strong {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-weight: normal;
+
+    color: #333333;
+}
+
+.academic-footer span {
+    margin-left: 18px;
 }
 
 
-/* MOBILE */
+/* =========================================================
+   21. MOBILE
+   ========================================================= */
 
 @media (max-width: 800px) {
 
@@ -246,224 +634,57 @@ h3 {
     }
 
     .header-inner {
-        padding: 15px 0;
+        min-height: auto;
+
+        padding: 14px 0;
+
         flex-direction: column;
+
         align-items: flex-start;
-        gap: 12px;
+
+        gap: 10px;
     }
 
     .main-nav {
         flex-wrap: wrap;
-        gap: 8px 15px;
+
+        gap: 7px 15px;
     }
 
-    .hero {
-        padding: 35px 0;
+    .academic-intro {
+        padding: 28px 0 32px;
     }
-
-    .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .profile-photo {
-        width: 150px;
-        height: 185px;
-    }
-
-    .hero-title {
-        font-size: 28px;
-    }
-
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .highlights {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* ---------- ACADEMIC HOMEPAGE ---------- */
-
-.academic-intro {
-    padding: 45px 0 50px;
-    border-bottom: 1px solid #dddddd;
-}
-
-.intro-layout {
-    display: grid;
-    grid-template-columns: 1fr 180px;
-    gap: 60px;
-    align-items: start;
-}
-
-.academic-label,
-.section-label {
-    font-size: 11px;
-    letter-spacing: 1.4px;
-    color: #6b1e2b;
-    margin-bottom: 10px;
-}
-
-.academic-intro h1 {
-    margin: 0 0 8px;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 32px;
-    font-weight: normal;
-    color: #222222;
-}
-
-.academic-position {
-    font-size: 15px;
-    color: #666666;
-    margin-bottom: 22px;
-}
-
-.academic-statement {
-    max-width: 720px;
-    font-size: 16px;
-    color: #333333;
-}
-
-.intro-photo img {
-    width: 180px;
-    height: 220px;
-    object-fit: cover;
-}
-
-.academic-section {
-    padding: 42px 0;
-}
-
-.academic-section-grey {
-    background: #fafafa;
-}
-
-.academic-section h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 23px;
-    font-weight: normal;
-    margin-bottom: 20px;
-}
-
-.research-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 55px;
-}
-
-.research-list > div {
-    padding: 18px 0;
-    border-top: 1px solid #dddddd;
-}
-
-.research-list h3 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 17px;
-    font-weight: normal;
-    margin-bottom: 5px;
-}
-
-.research-list p {
-    font-size: 14px;
-    color: #5f6368;
-}
-
-.research-subtitle {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 17px;
-    color: #555555;
-}
-
-.research-description {
-    max-width: 800px;
-}
-
-.programme-list {
-    max-width: 850px;
-}
-
-.programme-item {
-    display: grid;
-    grid-template-columns: 45px 1fr;
-    gap: 10px;
-    padding: 18px 0;
-    border-top: 1px solid #dddddd;
-}
-
-.programme-item > span {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 15px;
-    color: #6b1e2b;
-}
-
-.programme-item h3 {
-    font-size: 17px;
-    font-weight: normal;
-    margin-bottom: 5px;
-}
-
-.programme-item p {
-    font-size: 14px;
-    color: #5f6368;
-}
-
-.profile-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.profile-grid > div {
-    border-top: 1px solid #cccccc;
-    padding-top: 12px;
-}
-
-.profile-grid strong {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 17px;
-    font-weight: normal;
-}
-
-.profile-grid p {
-    font-size: 13px;
-    color: #666666;
-}
-
-.academic-footer {
-    border-top: 1px solid #dddddd;
-    padding: 28px 0;
-    font-size: 13px;
-    color: #666666;
-}
-
-.academic-footer strong {
-    font-family: Georgia, "Times New Roman", serif;
-    font-weight: normal;
-    color: #333333;
-}
-
-.academic-footer span {
-    margin-left: 20px;
-}
-
-@media (max-width: 800px) {
 
     .intro-layout {
         grid-template-columns: 1fr;
-        gap: 25px;
+
+        gap: 22px;
     }
 
     .intro-photo {
         order: -1;
     }
 
-    .research-list {
+    .intro-photo img,
+    .profile-photo {
+        width: 135px;
+        height: 165px;
+    }
+
+    .academic-intro h1 {
+        font-size: 25px;
+    }
+
+    .research-list,
+    .research-grid {
         grid-template-columns: 1fr;
     }
 
     .profile-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .highlights {
         grid-template-columns: 1fr 1fr;
     }
 
