@@ -520,3 +520,24 @@ h3 {
         margin-top: 5px;
     }
 }
+.courses {
+  margin-top: 40px;
+}
+
+.courses h2 {
+  margin-bottom: 30px;
+}
+
+.course {
+  margin-bottom: 28px;
+}
+
+.course h3 {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.course p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
