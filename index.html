@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,416 +9,15 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Dr Imran Ishrat | Supply Chain Management</title>
+    <title>
+        Dr Imran Ishrat | Supply Chain & Operations Management
+    </title>
 
     <meta name="description"
-          content="Dr Imran Ishrat is a Senior Lecturer and researcher specialising in supply chain management, operations management, sustainability and transformative supply chains.">
+          content="Academic website of Dr Imran Ishrat, Senior Lecturer and researcher in Supply Chain Management, Operations Management and transformative supply chains.">
 
-    <style>
-
-        /* =========================
-           GENERAL
-        ========================= */
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #1f2933;
-            background: #ffffff;
-            line-height: 1.7;
-        }
-
-        a {
-            color: inherit;
-        }
-
-
-        /* =========================
-           NAVIGATION
-        ========================= */
-
-        header {
-            background: #17202a;
-            color: white;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            max-width: 1150px;
-            margin: auto;
-            padding: 18px 30px;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            font-size: 18px;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 28px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: #b8c7d9;
-        }
-
-
-        /* =========================
-           HERO
-        ========================= */
-
-        .hero {
-            background: #f4f6f8;
-            padding: 90px 30px;
-        }
-
-        .hero-inner {
-            max-width: 1150px;
-            margin: auto;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            gap: 70px;
-        }
-
-        .hero-text {
-            flex: 1;
-        }
-
-        .eyebrow {
-            font-size: 13px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            color: #667788;
-            margin-bottom: 18px;
-        }
-
-        .hero h1 {
-            font-size: 54px;
-            line-height: 1.1;
-            color: #17202a;
-            margin-bottom: 15px;
-        }
-
-        .hero h2 {
-            font-size: 24px;
-            font-weight: normal;
-            color: #52606d;
-            margin-bottom: 25px;
-        }
-
-        .hero-description {
-            font-size: 19px;
-            max-width: 750px;
-            color: #3d4852;
-        }
-
-
-        /* =========================
-           PROFILE PHOTO
-        ========================= */
-
-        .profile-container {
-            width: 300px;
-            flex-shrink: 0;
-        }
-
-        .profile-container img {
-            width: 300px;
-            height: 360px;
-
-            object-fit: cover;
-
-            display: block;
-
-            border-radius: 6px;
-        }
-
-
-        /* =========================
-           BUTTONS
-        ========================= */
-
-        .buttons {
-            margin-top: 32px;
-        }
-
-        .button {
-            display: inline-block;
-
-            padding: 12px 22px;
-
-            margin-right: 10px;
-
-            border: 1px solid #17202a;
-
-            text-decoration: none;
-
-            border-radius: 4px;
-
-            font-weight: bold;
-
-            font-size: 14px;
-        }
-
-        .button-primary {
-            background: #17202a;
-            color: white;
-        }
-
-        .button-secondary {
-            color: #17202a;
-            background: transparent;
-        }
-
-        .button:hover {
-            opacity: 0.8;
-        }
-
-
-        /* =========================
-           SECTIONS
-        ========================= */
-
-        section {
-            padding: 80px 30px;
-        }
-
-        .container {
-            max-width: 1050px;
-            margin: auto;
-        }
-
-        .section-title {
-            font-size: 34px;
-            color: #17202a;
-            margin-bottom: 20px;
-        }
-
-        .section-intro {
-            max-width: 850px;
-            font-size: 18px;
-            color: #52606d;
-        }
-
-
-        /* =========================
-           RESEARCH
-        ========================= */
-
-        .research {
-            background: white;
-        }
-
-        .research-grid {
-            margin-top: 40px;
-
-            display: grid;
-
-            grid-template-columns: repeat(2, 1fr);
-
-            gap: 25px;
-        }
-
-        .research-card {
-            border: 1px solid #e1e5e8;
-
-            padding: 30px;
-
-            border-radius: 6px;
-
-            background: #ffffff;
-        }
-
-        .research-card h3 {
-            color: #17202a;
-            margin-bottom: 12px;
-            font-size: 21px;
-        }
-
-        .research-card p {
-            color: #52606d;
-        }
-
-
-        /* =========================
-           FEATURED RESEARCH
-        ========================= */
-
-        .featured {
-            background: #f4f6f8;
-        }
-
-        .featured-box {
-            margin-top: 30px;
-
-            padding: 40px;
-
-            background: white;
-
-            border-left: 5px solid #17202a;
-        }
-
-        .featured-box h3 {
-            font-size: 28px;
-            margin-bottom: 15px;
-            color: #17202a;
-        }
-
-
-        /* =========================
-           ACHIEVEMENTS
-        ========================= */
-
-        .achievements {
-            display: grid;
-
-            grid-template-columns: repeat(3, 1fr);
-
-            gap: 20px;
-
-            margin-top: 40px;
-        }
-
-        .achievement {
-            background: #f4f6f8;
-
-            padding: 30px;
-
-            text-align: center;
-
-            border-radius: 6px;
-        }
-
-        .achievement strong {
-            display: block;
-
-            font-size: 28px;
-
-            color: #17202a;
-
-            margin-bottom: 8px;
-        }
-
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact {
-            background: #f4f6f8;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-            background: #17202a;
-
-            color: white;
-
-            padding: 45px 30px;
-        }
-
-        .footer-inner {
-            max-width: 1050px;
-            margin: auto;
-
-            display: flex;
-
-            justify-content: space-between;
-
-            gap: 30px;
-        }
-
-        footer a {
-            text-decoration: none;
-        }
-
-
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media (max-width: 800px) {
-
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 15px;
-            }
-
-            .hero-inner {
-                flex-direction: column-reverse;
-                text-align: center;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .hero h2 {
-                font-size: 21px;
-            }
-
-            .hero-description {
-                margin: auto;
-            }
-
-            .profile-container,
-            .profile-container img {
-                width: 230px;
-            }
-
-            .profile-container img {
-                height: 280px;
-            }
-
-            .research-grid,
-            .achievements {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-inner {
-                flex-direction: column;
-            }
-
-        }
-
-    </style>
+    <link rel="stylesheet"
+          href="css/style.css">
 
 </head>
 
@@ -425,500 +25,413 @@
 <body>
 
 
-    <!-- =========================
-         NAVIGATION
-    ========================= -->
+<header class="site-header">
 
-    <header>
+    <div class="container header-inner">
 
-        <nav>
+        <a class="site-name"
+           href="index.html">
 
-            <div class="logo">
-                IMRAN ISHRAT
-            </div>
+            Imran Ishrat
 
-            <ul>
+        </a>
 
-                <li>
-                    <a href="#about">About</a>
-                </li>
 
-                <li>
-                    <a href="#research">Research</a>
-                </li>
+        <nav class="main-nav">
 
-                <li>
-                    <a href="#publications">Publications</a>
-                </li>
+            <a href="index.html">
+                Home
+            </a>
 
-                <li>
-                    <a href="#engagement">Engagement</a>
-                </li>
+            <a href="about.html">
+                About
+            </a>
 
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+            <a href="research.html">
+                Research
+            </a>
 
-            </ul>
+            <a href="publications.html">
+                Publications
+            </a>
+
+            <a href="teaching.html">
+                Teaching
+            </a>
+
+            <a href="engagement.html">
+                Engagement
+            </a>
+
+            <a href="cv.html">
+                CV
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
 
         </nav>
 
-    </header>
+    </div>
+
+</header>
 
 
 
-    <!-- =========================
-         HERO
-    ========================= -->
-
-    <section class="hero">
-
-        <div class="hero-inner">
+<main>
 
 
-            <div class="hero-text">
+<section class="hero">
 
-                <p class="eyebrow">
-                    SENIOR LECTURER · RESEARCHER · ACADEMIC
-                </p>
-
-                <h1>
-                    Dr Imran Ishrat
-                </h1>
-
-                <h2>
-                    Supply Chain Management · Operations Management
-                </h2>
-
-                <p class="hero-description">
-
-                    I research how supply chains can become more
-                    sustainable, transparent, resilient and
-                    transformative, with particular interest in
-                    luxury and natural-fibre supply chains in the
-                    Global South.
-
-                </p>
+    <div class="container hero-grid">
 
 
-                <div class="buttons">
+        <div>
 
-                    <a class="button button-primary"
-                       href="#research">
+            <div class="hero-label">
 
-                        Explore My Research
-
-                    </a>
-
-                    <a class="button button-secondary"
-                       href="#contact">
-
-                        Contact
-
-                    </a>
-
-                </div>
+                Senior Lecturer · Researcher
 
             </div>
 
 
-            <div class="profile-container">
+            <h1 class="hero-title">
 
-                <img src="profile.jpg"
-                     alt="Dr Imran Ishrat">
+                Dr Imran Ishrat
+
+            </h1>
+
+
+            <div class="hero-position">
+
+                Supply Chain Management · Operations Management
 
             </div>
 
 
-        </div>
+            <p class="hero-description">
 
-    </section>
-
-
-
-    <!-- =========================
-         ABOUT
-    ========================= -->
-
-    <section id="about">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                About
-            </h2>
-
-            <p class="section-intro">
-
-                I am a Senior Lecturer and researcher with more than
-                20 years of experience across Industrial Engineering,
-                Operations Management and Supply Chain Management.
-
-                My academic journey has evolved from a focus on
-                operational efficiency and systems improvement towards
-                research examining how supply chains can contribute to
-                economic, social, environmental and technological
-                transformation.
-
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         RESEARCH
-    ========================= -->
-
-    <section id="research"
-             class="research">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Research
-            </h2>
-
-            <p class="section-intro">
-
-                My research focuses on transformative and sustainable
-                supply chains, particularly within luxury industries,
-                natural fibres and the Global South.
+                I research how supply chains can become more
+                sustainable, transparent, resilient and
+                transformative, with particular interest in
+                luxury and natural-fibre supply chains in the
+                Global South.
 
             </p>
 
 
-            <div class="research-grid">
+            <div class="button-row">
+
+                <a class="button button-filled"
+                   href="research.html">
+
+                    Research
+
+                </a>
 
 
-                <div class="research-card">
+                <a class="button"
+                   href="cv.html">
 
-                    <h3>
-                        Transformative Supply Chains
-                    </h3>
+                    Curriculum Vitae
 
-                    <p>
-
-                        Understanding how supply chains can move beyond
-                        efficiency towards positive economic, social,
-                        cultural and environmental transformation.
-
-                    </p>
-
-                </div>
-
-
-                <div class="research-card">
-
-                    <h3>
-                        Sustainable Supply Chains
-                    </h3>
-
-                    <p>
-
-                        Investigating sustainability across economic,
-                        social, environmental, cultural and technological
-                        dimensions.
-
-                    </p>
-
-                </div>
-
-
-                <div class="research-card">
-
-                    <h3>
-                        Cashmere & Luxury Fibres
-                    </h3>
-
-                    <p>
-
-                        Researching cashmere supply chains, artisan
-                        communities and the transformation of luxury
-                        natural-fibre value chains.
-
-                    </p>
-
-                </div>
-
-
-                <div class="research-card">
-
-                    <h3>
-                        AI & Traceability
-                    </h3>
-
-                    <p>
-
-                        Exploring artificial intelligence and emerging
-                        technologies for supply-chain traceability,
-                        transparency, provenance and decision-making.
-
-                    </p>
-
-                </div>
-
+                </a>
 
             </div>
 
         </div>
 
-    </section>
+
+        <div>
+
+            <img class="profile-photo"
+                 src="profile.jpg"
+                 alt="Dr Imran Ishrat">
+
+        </div>
+
+
+    </div>
+
+</section>
 
 
 
-    <!-- =========================
-         FEATURED RESEARCH
-    ========================= -->
+<section class="section">
 
-    <section class="featured">
+    <div class="container">
 
-        <div class="container">
-
-            <h2 class="section-title">
-                Featured Research
-            </h2>
+        <h2>
+            Research
+        </h2>
 
 
-            <div class="featured-box">
+        <p>
+
+            My research sits at the intersection of supply chain
+            management, operations management, sustainability and
+            technological transformation.
+
+            My current programme focuses particularly on
+            transformative luxury and natural-fibre supply chains
+            in the Global South.
+
+        </p>
+
+
+        <div class="research-grid">
+
+
+            <div class="research-item">
 
                 <h3>
-                    Transformative Cashmere Supply Chains
+                    Transformative Supply Chains
                 </h3>
 
                 <p>
 
-                    My research examines how cashmere supply chains
-                    in the Global South can become more sustainable,
-                    transparent, equitable and resilient.
-
-                    The research brings together sustainability,
-                    technology, traceability, fair trade, governance,
-                    cultural heritage and artisan wellbeing.
+                    Understanding how supply chains can move beyond
+                    efficiency towards sustainable, equitable and
+                    resilient systems.
 
                 </p>
 
             </div>
 
-        </div>
 
-    </section>
+            <div class="research-item">
 
-
-
-    <!-- =========================
-         ACHIEVEMENTS
-    ========================= -->
-
-    <section id="publications">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Academic Highlights
-            </h2>
-
-
-            <div class="achievements">
-
-
-                <div class="achievement">
-
-                    <strong>
-                        20+
-                    </strong>
-
-                    Years of academic and professional experience
-
-                </div>
-
-
-                <div class="achievement">
-
-                    <strong>
-                        PhD
-                    </strong>
-
-                    Massey University
-
-                </div>
-
-
-                <div class="achievement">
-
-                    <strong>
-                        CRC Press
-                    </strong>
-
-                    Academic Book Author
-
-                </div>
-
-
-                <div class="achievement">
-
-                    <strong>
-                        Exceptional
-                    </strong>
-
-                    Doctoral Thesis Recognition
-
-                </div>
-
-
-                <div class="achievement">
-
-                    <strong>
-                        International
-                    </strong>
-
-                    Research & Conference Engagement
-
-                </div>
-
-
-                <div class="achievement">
-
-                    <strong>
-                        ANU
-                    </strong>
-
-                    Invited Research Presentation
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         INTERNATIONAL ENGAGEMENT
-    ========================= -->
-
-    <section id="engagement"
-             class="featured">
-
-        <div class="container">
-
-            <h2 class="section-title">
-
-                International Research Engagement
-
-            </h2>
-
-
-            <p class="section-intro">
-
-                My research engagement includes international research
-                networks, collaborations and professional connections
-                involving sustainable natural fibres, South Asia,
-                supply chains and responsible production.
-
-                I welcome opportunities for international research
-                collaboration, visiting academic engagement, invited
-                seminars and industry partnerships.
-
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         CONTACT
-    ========================= -->
-
-    <section id="contact"
-             class="contact">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Research & Collaboration
-            </h2>
-
-            <p class="section-intro">
-
-                I welcome opportunities for research collaboration,
-                postgraduate supervision, academic exchange,
-                invited seminars and industry engagement.
-
-            </p>
-
-
-            <div class="buttons">
-
-                <a class="button button-primary"
-                   href="mailto:YOUR-EMAIL-HERE">
-
-                    Email Me
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         FOOTER
-    ========================= -->
-
-    <footer>
-
-        <div class="footer-inner">
-
-            <div>
-
-                <strong>
-                    Dr Imran Ishrat
-                </strong>
+                <h3>
+                    Sustainability & Regeneration
+                </h3>
 
                 <p>
 
-                    Supply Chain Management · Operations Management ·
-                    Transformative Supply Chains
+                    Examining economic, environmental, social,
+                    cultural and technological dimensions of
+                    sustainable supply chains.
 
                 </p>
 
             </div>
 
 
-            <div>
+            <div class="research-item">
 
-                <a href="#">
-                    ORCID
-                </a>
+                <h3>
+                    Cashmere & Luxury Fibres
+                </h3>
 
-                &nbsp; | &nbsp;
+                <p>
 
-                <a href="#">
-                    Google Scholar
-                </a>
+                    Investigating the transformation of cashmere
+                    and luxury natural-fibre supply chains in the
+                    Global South.
 
-                &nbsp; | &nbsp;
-
-                <a href="#">
-                    LinkedIn
-                </a>
+                </p>
 
             </div>
 
+
+            <div class="research-item">
+
+                <h3>
+                    AI, Traceability & Transparency
+                </h3>
+
+                <p>
+
+                    Exploring emerging technologies for provenance,
+                    traceability, transparency and supply-chain
+                    decision-making.
+
+                </p>
+
+            </div>
+
+
         </div>
 
-    </footer>
+    </div>
+
+</section>
+
+
+
+<section class="section section-light">
+
+    <div class="container">
+
+        <h2>
+            Featured Research
+        </h2>
+
+
+        <div class="featured-research">
+
+            <h3>
+                Transformative Cashmere Supply Chains
+            </h3>
+
+
+            <p>
+
+                <strong>
+                    Challenges and opportunities in the Global South
+                </strong>
+
+            </p>
+
+
+            <p>
+
+                My flagship research programme examines how
+                cashmere supply chains can become more sustainable,
+                transparent, equitable and resilient while
+                protecting cultural heritage and strengthening
+                artisan livelihoods.
+
+            </p>
+
+
+            <a href="research.html">
+
+                Explore the research programme →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="section">
+
+    <div class="container">
+
+        <h2>
+            Academic Highlights
+        </h2>
+
+
+        <div class="highlights">
+
+
+            <div class="highlight">
+
+                <div class="highlight-number">
+                    20+
+                </div>
+
+                <div class="highlight-label">
+                    Years of academic and professional experience
+                </div>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <div class="highlight-number">
+                    PhD
+                </div>
+
+                <div class="highlight-label">
+                    Massey University
+                </div>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <div class="highlight-number">
+                    CRC Press
+                </div>
+
+                <div class="highlight-label">
+                    Academic book author
+                </div>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <div class="highlight-number">
+                    ANU
+                </div>
+
+                <div class="highlight-label">
+                    Invited research presentation
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="section section-light">
+
+    <div class="container">
+
+        <h2>
+            International Engagement
+        </h2>
+
+
+        <p>
+
+            My academic and research engagement includes
+            international collaborations, research networks,
+            industry engagement and invited presentations
+            relating to sustainable supply chains, South Asia
+            and natural-fibre industries.
+
+        </p>
+
+
+        <a href="engagement.html">
+
+            Explore international engagement →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <strong>
+            Dr Imran Ishrat
+        </strong>
+
+        <p>
+            Supply Chain Management · Operations Management ·
+            Transformative Supply Chains
+        </p>
+
+    </div>
+
+</footer>
 
 
 </body>
