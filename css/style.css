@@ -283,3 +283,193 @@ h3 {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/* ---------- ACADEMIC HOMEPAGE ---------- */
+
+.academic-intro {
+    padding: 45px 0 50px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.intro-layout {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 60px;
+    align-items: start;
+}
+
+.academic-label,
+.section-label {
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    color: #6b1e2b;
+    margin-bottom: 10px;
+}
+
+.academic-intro h1 {
+    margin: 0 0 8px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #222222;
+}
+
+.academic-position {
+    font-size: 15px;
+    color: #666666;
+    margin-bottom: 22px;
+}
+
+.academic-statement {
+    max-width: 720px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.intro-photo img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.academic-section {
+    padding: 42px 0;
+}
+
+.academic-section-grey {
+    background: #fafafa;
+}
+
+.academic-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.research-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 55px;
+}
+
+.research-list > div {
+    padding: 18px 0;
+    border-top: 1px solid #dddddd;
+}
+
+.research-list h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.research-list p {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.research-subtitle {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    color: #555555;
+}
+
+.research-description {
+    max-width: 800px;
+}
+
+.programme-list {
+    max-width: 850px;
+}
+
+.programme-item {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 10px;
+    padding: 18px 0;
+    border-top: 1px solid #dddddd;
+}
+
+.programme-item > span {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    color: #6b1e2b;
+}
+
+.programme-item h3 {
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.programme-item p {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.profile-grid > div {
+    border-top: 1px solid #cccccc;
+    padding-top: 12px;
+}
+
+.profile-grid strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.profile-grid p {
+    font-size: 13px;
+    color: #666666;
+}
+
+.academic-footer {
+    border-top: 1px solid #dddddd;
+    padding: 28px 0;
+    font-size: 13px;
+    color: #666666;
+}
+
+.academic-footer strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    color: #333333;
+}
+
+.academic-footer span {
+    margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .intro-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .intro-photo {
+        order: -1;
+    }
+
+    .research-list {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .academic-footer span {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
