@@ -1,11 +1,6 @@
 /* =========================================================
-   DR IMRAN ISHRAT — ACADEMIC WEBSITE
-   Clean, restrained faculty-style design
-   ========================================================= */
-
-
-/* =========================================================
-   1. BASE
+   IMRAN ISHRAT — ACADEMIC WEBSITE
+   Unified typography and layout
    ========================================================= */
 
 * {
@@ -19,17 +14,11 @@ html {
 body {
     margin: 0;
     padding: 0;
-
     background: #ffffff;
     color: #333333;
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.55;
-}
-
-img {
-    max-width: 100%;
 }
 
 a {
@@ -45,9 +34,13 @@ p {
     margin: 0 0 14px;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /* =========================================================
-   2. MAIN CONTAINER
+   CONTAINER
    ========================================================= */
 
 .container {
@@ -58,7 +51,7 @@ p {
 
 
 /* =========================================================
-   3. TYPOGRAPHY
+   TYPOGRAPHY
    ========================================================= */
 
 h1,
@@ -72,24 +65,24 @@ h3 {
 h1 {
     font-size: 26px;
     line-height: 1.2;
-    margin: 0 0 8px;
+    margin: 0 0 9px;
 }
 
 h2 {
     font-size: 19px;
     line-height: 1.3;
-    margin: 0 0 18px;
+    margin: 0 0 17px;
 }
 
 h3 {
     font-size: 15px;
-    line-height: 1.35;
+    line-height: 1.4;
     margin: 0 0 6px;
 }
 
 
 /* =========================================================
-   4. HEADER
+   HEADER
    ========================================================= */
 
 .site-header {
@@ -99,7 +92,6 @@ h3 {
 
 .header-inner {
     min-height: 58px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,7 +101,6 @@ h3 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 18px;
     color: #222222;
-    letter-spacing: 0.2px;
 }
 
 .site-name:hover {
@@ -118,7 +109,7 @@ h3 {
 
 
 /* =========================================================
-   5. NAVIGATION
+   NAVIGATION
    ========================================================= */
 
 .main-nav {
@@ -140,7 +131,7 @@ h3 {
 
 
 /* =========================================================
-   6. GENERAL HERO / PAGE INTRO
+   PAGE INTRO
    ========================================================= */
 
 .hero {
@@ -148,13 +139,13 @@ h3 {
     border-bottom: 1px solid #eeeeee;
 }
 
-.hero-label {
+.hero-label,
+.academic-label,
+.section-label {
     margin-bottom: 7px;
-
     font-size: 10px;
-    letter-spacing: 1.4px;
+    letter-spacing: 1.3px;
     text-transform: uppercase;
-
     color: #6b1e2b;
 }
 
@@ -162,24 +153,20 @@ h3 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 26px;
     font-weight: normal;
-
     color: #222222;
-
     margin: 0 0 10px;
 }
 
 .hero-description {
     max-width: 700px;
-
     font-size: 14px;
     line-height: 1.6;
-
     color: #555555;
 }
 
 
 /* =========================================================
-   7. ACADEMIC HOMEPAGE INTRODUCTION
+   HOMEPAGE INTRODUCTION
    ========================================================= */
 
 .academic-intro {
@@ -189,116 +176,55 @@ h3 {
 
 .intro-layout {
     display: grid;
-
     grid-template-columns: 1fr 150px;
-
     gap: 55px;
-
     align-items: start;
 }
 
-.academic-label {
-    margin-bottom: 7px;
-
-    font-size: 10px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-
-    color: #6b1e2b;
-}
-
 .academic-intro h1 {
-    margin: 0 0 7px;
-
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 26px;
     font-weight: normal;
-
     line-height: 1.2;
-
     color: #222222;
+    margin: 0 0 7px;
 }
 
 .academic-position {
-    margin-bottom: 18px;
-
     font-size: 14px;
-
     line-height: 1.55;
-
     color: #666666;
+    margin-bottom: 18px;
 }
 
 .academic-statement {
     max-width: 700px;
-
     font-size: 15px;
-
     line-height: 1.6;
-
     color: #333333;
 }
 
 .intro-text > p:not(.academic-position):not(.academic-statement) {
     max-width: 700px;
-
     color: #555555;
 }
 
 
 /* =========================================================
-   8. PROFILE PHOTO
+   PHOTO
    ========================================================= */
 
 .intro-photo img,
 .profile-photo {
     width: 150px;
     height: 185px;
-
     object-fit: cover;
-
     display: block;
 }
 
 
 /* =========================================================
-   9. BUTTONS
-   ========================================================= */
-
-.button-row {
-    margin-top: 18px;
-}
-
-.button {
-    display: inline-block;
-
-    padding: 5px 11px;
-
-    margin-right: 5px;
-
-    border: 1px solid #6b1e2b;
-
-    font-size: 12px;
-
-    color: #6b1e2b;
-}
-
-.button:hover {
-    background: #6b1e2b;
-    color: #ffffff;
-
-    text-decoration: none;
-}
-
-.button-filled {
-    background: #6b1e2b;
-    color: #ffffff;
-}
-
-
-/* =========================================================
-   10. GENERAL SECTIONS
+   SECTIONS
    ========================================================= */
 
 .section,
@@ -312,74 +238,55 @@ h3 {
 }
 
 .academic-section h2 {
-    margin: 0 0 17px;
-
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 19px;
     font-weight: normal;
-
     color: #222222;
+    margin: 0 0 17px;
 }
 
 
 /* =========================================================
-   11. RESEARCH INTERESTS
+   RESEARCH LIST
    ========================================================= */
 
 .research-list {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     column-gap: 50px;
 }
 
 .research-list > div {
     padding: 16px 0;
-
     border-top: 1px solid #dddddd;
 }
 
 .research-list h3 {
-    margin: 0 0 5px;
-
-    font-family: Georgia, "Times New Roman", serif;
-
     font-size: 15px;
-    font-weight: normal;
-
-    color: #222222;
+    margin-bottom: 5px;
 }
 
 .research-list p {
     margin: 0;
-
     font-size: 13px;
-
     line-height: 1.55;
-
     color: #606060;
 }
 
 
 /* =========================================================
-   12. RESEARCH GRID
+   RESEARCH GRID
    ========================================================= */
 
 .research-grid {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     column-gap: 50px;
-
     margin-top: 20px;
 }
 
 .research-item {
     padding: 16px 0;
-
     border-top: 1px solid #dddddd;
 }
 
@@ -389,22 +296,18 @@ h3 {
 
 .research-item p {
     margin-bottom: 0;
-
     font-size: 13px;
-
     color: #606060;
 }
 
 
 /* =========================================================
-   13. FEATURED RESEARCH
+   FEATURED RESEARCH
    ========================================================= */
 
 .featured-research {
     max-width: 780px;
-
     padding-left: 18px;
-
     border-left: 2px solid #6b1e2b;
 }
 
@@ -419,26 +322,7 @@ h3 {
 
 
 /* =========================================================
-   14. RESEARCH SUBTITLE
-   ========================================================= */
-
-.research-subtitle {
-    margin-bottom: 15px;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: 16px;
-
-    color: #555555;
-}
-
-.research-description {
-    max-width: 760px;
-}
-
-
-/* =========================================================
-   15. RESEARCH PROGRAMME
+   RESEARCH PROGRAMME
    ========================================================= */
 
 .programme-list {
@@ -447,174 +331,126 @@ h3 {
 
 .programme-item {
     display: grid;
-
     grid-template-columns: 38px 1fr;
-
     gap: 8px;
-
     padding: 16px 0;
-
     border-top: 1px solid #dddddd;
 }
 
 .programme-item > span {
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 13px;
-
     color: #6b1e2b;
 }
 
 .programme-item h3 {
-    margin-bottom: 5px;
-
     font-size: 15px;
+    margin-bottom: 5px;
 }
 
 .programme-item p {
     margin: 0;
-
     font-size: 13px;
-
     color: #606060;
 }
 
 
 /* =========================================================
-   16. ACADEMIC PROFILE
+   ACADEMIC PROFILE
    ========================================================= */
 
 .profile-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 25px;
 }
 
 .profile-grid > div {
     padding-top: 10px;
-
     border-top: 1px solid #cccccc;
 }
 
 .profile-grid strong {
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 15px;
-
     font-weight: normal;
-
     color: #222222;
 }
 
 .profile-grid p {
     margin-top: 4px;
-
     font-size: 12px;
-
     color: #666666;
 }
 
 
 /* =========================================================
-   17. PUBLICATIONS
+   PUBLICATIONS
    ========================================================= */
 
 .publication {
     padding: 15px 0;
-
     border-top: 1px solid #dddddd;
 }
 
 .publication-title {
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 15px;
-
     color: #222222;
 }
 
 .publication-meta {
     font-size: 12px;
-
     color: #666666;
 }
 
 
 /* =========================================================
-   18. SECTION LABEL
+   BUTTONS / LINKS
    ========================================================= */
 
-.section-label {
-    margin-bottom: 8px;
+.button-row {
+    margin-top: 18px;
+}
 
-    font-size: 10px;
-
-    letter-spacing: 1.4px;
-
-    text-transform: uppercase;
-
+.button {
+    display: inline-block;
+    padding: 5px 11px;
+    margin-right: 5px;
+    border: 1px solid #6b1e2b;
+    font-size: 12px;
     color: #6b1e2b;
 }
 
-
-/* =========================================================
-   19. HIGHLIGHTS
-   ========================================================= */
-
-.highlights {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 25px;
+.button-filled {
+    background: #6b1e2b;
+    color: #ffffff;
 }
 
-.highlight {
-    padding-top: 9px;
-
-    border-top: 1px solid #cccccc;
-}
-
-.highlight-number {
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: 18px;
-
-    color: #222222;
-}
-
-.highlight-label {
-    font-size: 12px;
-
-    color: #666666;
+.button:hover {
+    background: #6b1e2b;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 
 /* =========================================================
-   20. ACADEMIC FOOTER
+   FOOTER
    ========================================================= */
 
 .academic-footer,
 .site-footer {
     margin-top: 20px;
-
     padding: 27px 0;
-
     border-top: 1px solid #dddddd;
-
     font-size: 12px;
-
     color: #666666;
 }
 
 .academic-footer strong,
 .site-footer strong {
     font-family: Georgia, "Times New Roman", serif;
-
     font-weight: normal;
-
     color: #333333;
 }
 
@@ -624,7 +460,7 @@ h3 {
 
 
 /* =========================================================
-   21. MOBILE
+   MOBILE
    ========================================================= */
 
 @media (max-width: 800px) {
@@ -635,19 +471,14 @@ h3 {
 
     .header-inner {
         min-height: auto;
-
         padding: 14px 0;
-
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 10px;
     }
 
     .main-nav {
         flex-wrap: wrap;
-
         gap: 7px 15px;
     }
 
@@ -657,7 +488,6 @@ h3 {
 
     .intro-layout {
         grid-template-columns: 1fr;
-
         gap: 22px;
     }
 
@@ -681,10 +511,6 @@ h3 {
     }
 
     .profile-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .highlights {
         grid-template-columns: 1fr 1fr;
     }
 
