@@ -1,2 +1,2 @@
 # imranishrat.github.io
-Official academic website of Dr Imran Ishrat
+Official website of Imran Ishrat
