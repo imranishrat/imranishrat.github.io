@@ -342,15 +342,60 @@ a:hover {
     align-items: start;
 }
 
-.intro-photo {
-    order: 0;
-}
+@media (max-width: 800px) {
 
-.intro-photo img,
-.profile-photo {
-    width: 100px;
-    height: 125px;
-    object-fit: cover;
+    .container {
+        width: 92%;
+    }
+
+    .header-inner {
+        min-height: auto;
+        padding: 13px 0;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 7px 15px;
+    }
+
+    /* Profile section */
+
+    .intro-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 105px;
+        gap: 18px;
+        align-items: start;
+    }
+
+    .intro-text {
+        min-width: 0;
+    }
+
+    .intro-photo {
+        order: 0;
+        width: 105px;
+    }
+
+    .intro-photo img,
+    .profile-photo {
+        display: block;
+        width: 105px;
+        height: 130px;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    /* Keep the remaining content comfortable on mobile */
+
+    .academic-intro h1 {
+        font-size: 24px;
+    }
+
+    .research-list,
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
     .research-list,
