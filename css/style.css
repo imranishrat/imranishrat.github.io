@@ -224,6 +224,7 @@ a:hover {
     color: #555555;
 }
 
+
 /* ---------------------------------------------------------
    PUBLICATIONS
    --------------------------------------------------------- */
@@ -234,14 +235,18 @@ a:hover {
 }
 
 .publication-title {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 15px;
-    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 3px;
 }
 
 .publication-meta {
-    font-size: 12px;
-    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555555;
 }
 
 /* ---------------------------------------------------------
