@@ -75,7 +75,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     color: #222222;
 }
@@ -127,7 +127,7 @@ a:hover {
 }
 
 .academic-intro h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 27px;
     font-weight: normal;
     color: #222222;
@@ -205,79 +205,10 @@ a:hover {
     color: #5b5b5b;
 }
 
-/* ---------------------------------------------------------
-   FEATURED RESEARCH
-   --------------------------------------------------------- */
-
-.featured-research {
-    max-width: 850px;
-    padding-left: 16px;
-    border-left: 2px solid #6b1f2a;
-}
-
-.featured-research h3 {
-    font-size: 16px;
-}
-
-.featured-research p {
-    font-size: 13.5px;
-    color: #555555;
-}
 
 
-/* ---------------------------------------------------------
-   PUBLICATIONS
-   --------------------------------------------------------- */
 
-.publication {
-    padding: 13px 0;
-    border-top: 1px solid #dddddd;
-}
 
-.publication-title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #333333;
-    margin-bottom: 3px;
-}
-
-.publication-meta {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #555555;
-}
-
-/* ---------------------------------------------------------
-   PROGRAMMES / RESEARCH THEMES
-   --------------------------------------------------------- */
-
-.programme-item {
-    display: grid;
-    grid-template-columns: 40px minmax(0, 1fr);
-    gap: 8px;
-    padding: 14px 0;
-    border-top: 1px solid #dddddd;
-}
-
-.programme-item > span {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 13px;
-    color: #6b1f2a;
-}
-
-.programme-item h3 {
-    font-size: 15px;
-    margin-bottom: 4px;
-}
-
-.programme-item p {
-    margin: 0;
-    font-size: 13px;
-    line-height: 1.6;
-    color: #5b5b5b;
-}
 
 /* ---------------------------------------------------------
    BUTTONS
