@@ -407,3 +407,81 @@ a:hover {
         font-size: 24px;
     }
 }
+/* =========================================================
+   PROFILE / ACADEMIC INTRO
+   Keep photo beside text on mobile and allow text to
+   continue naturally below the bottom of the photo.
+   ========================================================= */
+
+.intro-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.intro-photo {
+    flex: 0 0 260px;
+}
+
+.intro-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .intro-layout {
+        display: block;
+        position: relative;
+    }
+
+    .intro-photo {
+        float: left;
+        width: 42%;
+        max-width: 230px;
+        margin: 0 22px 12px 0;
+    }
+
+    .intro-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .intro-text {
+        display: block;
+        width: auto;
+    }
+
+    .academic-label {
+        padding-top: 0;
+    }
+
+    .intro-text h2 {
+        margin-top: 8px;
+    }
+
+    .academic-position,
+    .academic-statement {
+        line-height: 1.6;
+    }
+
+    /* Clear the float after the complete profile section */
+    .intro-layout::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
