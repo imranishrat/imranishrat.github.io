@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Dr Imran Ishrat</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .research-profile-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:18px; }
+        .research-profile-links a { display:flex; align-items:center; gap:10px; min-width:210px; padding:10px 14px; border:1px solid #ddd; color:#6b1f2a; text-decoration:none; background:#fff; }
+        .research-profile-links a:hover { border-color:#6b1f2a; text-decoration:none; }
+        .research-profile-logo { width:32px !important; height:32px !important; max-width:32px !important; max-height:32px !important; object-fit:contain; flex:0 0 32px; }
+        .research-profile-links span:not(.research-profile-logo) { display:flex; flex-direction:column; line-height:1.35; }
+        .research-profile-links strong { font-size:13px; font-weight:600; }
+        .research-profile-links small { font-size:11px; color:#777; margin-top:2px; }
+    </style>
 </head>
 <body>
 <header class="site-header">
@@ -26,21 +35,9 @@
         <h1 class="page-title">Research</h1>
         <h2>Research Themes</h2>
         <div class="research-grid">
-            <div class="research-card">
-                <h3>Industrial Engineering</h3>
-                <p>Research on the design, analysis and improvement of complex systems using industrial engineering principles and analytical methods.</p>
-                <ul><li>Quality engineering</li><li>Process improvement</li><li>Multi-criteria decision-making</li></ul>
-            </div>
-            <div class="research-card">
-                <h3>Operations Management</h3>
-                <p>Research examining how organisations design and manage processes, resources and operations to improve efficiency, quality, productivity and organisational performance.</p>
-                <ul><li>Operations research</li><li>Process and productivity improvement</li><li>Quality management</li><li>Lean operations</li><li>Operations sustainability</li></ul>
-            </div>
-            <div class="research-card">
-                <h3>Supply Chain Management</h3>
-                <p>Research investigating the management and transformation of supply networks, with particular attention to sustainability, resilience, transparency and emerging technologies.</p>
-                <ul><li>Supply chain sustainability</li><li>Transformative supply chains</li><li>Traceability and transparency</li><li>Emerging technologies and AI</li></ul>
-            </div>
+            <div class="research-card"><h3>Industrial Engineering</h3><p>Research on the design, analysis and improvement of complex systems using industrial engineering principles and analytical methods.</p><ul><li>Quality engineering</li><li>Process improvement</li><li>Multi-criteria decision-making</li></ul></div>
+            <div class="research-card"><h3>Operations Management</h3><p>Research examining how organisations design and manage processes, resources and operations to improve efficiency, quality, productivity and organisational performance.</p><ul><li>Operations research</li><li>Process and productivity improvement</li><li>Quality management</li><li>Lean operations</li><li>Operations sustainability</li></ul></div>
+            <div class="research-card"><h3>Supply Chain Management</h3><p>Research investigating the management and transformation of supply networks, with particular attention to sustainability, resilience, transparency and emerging technologies.</p><ul><li>Supply chain sustainability</li><li>Transformative supply chains</li><li>Traceability and transparency</li><li>Emerging technologies and AI</li></ul></div>
         </div>
     </div>
 </section>
@@ -51,27 +48,13 @@
         <p>A significant component of my current research examines <strong>transformative supply chains in the Global South</strong>, with particular attention to sustainable luxury and fibre supply chains.</p>
         <p>My research on the cashmere industry investigates the interaction between sustainability, technology, governance, traceability, livelihoods and supply chain transformation. This work brings together supply chain management, sustainability and industrial engineering perspectives to understand how traditional industries can respond to changing global markets and sustainability expectations.</p>
         <p>I am particularly interested in research that connects academic theory with practical industry challenges and generates outcomes that can contribute to more sustainable and resilient supply networks.</p>
-
         <div class="sdg-focus">
             <h3>Transformative Luxury Apparel Supply Chains and the Sustainable Development Goals</h3>
             <p class="sdg-intro">This research programme connects the transformation of luxury apparel supply chains, with particular emphasis on the cashmere industry in the Global South, to three closely aligned Sustainable Development Goals.</p>
-
             <div class="sdg-grid">
-                <div class="sdg-card">
-                    <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-08.jpg" alt="United Nations Sustainable Development Goal 8: Decent Work and Economic Growth" style="display:block;width:36px !important;height:36px !important;max-width:36px !important;max-height:36px !important;object-fit:contain;margin:0 0 10px 0;">
-                    <h4>SDG 8 — Decent Work and Economic Growth</h4>
-                    <p>Promoting decent work, sustainable livelihoods and inclusive economic opportunities across luxury apparel supply chains, with particular attention to artisan communities and working conditions.</p>
-                </div>
-                <div class="sdg-card">
-                    <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-09.jpg" alt="United Nations Sustainable Development Goal 9: Industry, Innovation and Infrastructure" style="display:block;width:36px !important;height:36px !important;max-width:36px !important;max-height:36px !important;object-fit:contain;margin:0 0 10px 0;">
-                    <h4>SDG 9 — Industry, Innovation and Infrastructure</h4>
-                    <p>Supporting innovation, technological transformation and resilient production systems within traditional luxury fibre industries, including improved supply-chain capabilities and infrastructure.</p>
-                </div>
-                <div class="sdg-card">
-                    <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-12.jpg" alt="United Nations Sustainable Development Goal 12: Responsible Consumption and Production" style="display:block;width:36px !important;height:36px !important;max-width:36px !important;max-height:36px !important;object-fit:contain;margin:0 0 10px 0;">
-                    <h4>SDG 12 — Responsible Consumption and Production</h4>
-                    <p>Advancing responsible production, resource efficiency, circularity, traceability and sustainable consumption across luxury apparel value chains.</p>
-                </div>
+                <div class="sdg-card"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-08.jpg" alt="United Nations Sustainable Development Goal 8: Decent Work and Economic Growth" style="display:block;width:36px!important;height:36px!important;object-fit:contain;margin:0 0 10px 0;"><h4>SDG 8 — Decent Work and Economic Growth</h4><p>Promoting decent work, sustainable livelihoods and inclusive economic opportunities across luxury apparel supply chains, with particular attention to artisan communities and working conditions.</p></div>
+                <div class="sdg-card"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-09.jpg" alt="United Nations Sustainable Development Goal 9: Industry, Innovation and Infrastructure" style="display:block;width:36px!important;height:36px!important;object-fit:contain;margin:0 0 10px 0;"><h4>SDG 9 — Industry, Innovation and Infrastructure</h4><p>Supporting innovation, technological transformation and resilient production systems within traditional luxury fibre industries, including improved supply-chain capabilities and infrastructure.</p></div>
+                <div class="sdg-card"><img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-12.jpg" alt="United Nations Sustainable Development Goal 12: Responsible Consumption and Production" style="display:block;width:36px!important;height:36px!important;object-fit:contain;margin:0 0 10px 0;"><h4>SDG 12 — Responsible Consumption and Production</h4><p>Advancing responsible production, resource efficiency, circularity, traceability and sustainable consumption across luxury apparel value chains.</p></div>
             </div>
         </div>
     </div>
@@ -103,11 +86,11 @@
                 <span><strong>ORCID</strong><small>0000-0003-0661-1542</small></span>
             </a>
             <a href="https://scholar.google.com/citations?user=gYAkFgkAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile">
-                <span class="research-profile-logo scholar-logo" aria-hidden="true">G</span>
+                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Google_Scholar_logo.svg" alt="Google Scholar" class="research-profile-logo">
                 <span><strong>Google Scholar</strong><small>Research publications &amp; citations</small></span>
             </a>
             <a href="https://www.researchgate.net/profile/Imran-Ishrat" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate profile">
-                <span class="research-profile-logo researchgate-logo" aria-hidden="true">RG</span>
+                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/ResearchGate_icon_SVG.svg" alt="ResearchGate" class="research-profile-logo">
                 <span><strong>ResearchGate</strong><small>Research profile &amp; publications</small></span>
             </a>
         </div>
