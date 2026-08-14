@@ -3,13 +3,8 @@
    Master stylesheet
    ========================================================= */
 
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
     margin: 0;
@@ -21,20 +16,13 @@ body {
     line-height: 1.6;
 }
 
-/* ---------------------------------------------------------
-   MAIN PAGE WIDTH
-   --------------------------------------------------------- */
-
 .container {
     width: 92%;
     max-width: 1180px;
     margin: 0 auto;
 }
 
-/* ---------------------------------------------------------
-   HEADER
-   --------------------------------------------------------- */
-
+/* HEADER */
 .site-header {
     background: #ffffff;
     border-bottom: 1px solid #dddddd;
@@ -47,10 +35,7 @@ body {
     justify-content: flex-end;
 }
 
-/* ---------------------------------------------------------
-   NAVIGATION
-   --------------------------------------------------------- */
-
+/* NAVIGATION — same clean typography as homepage buttons */
 .main-nav {
     display: flex;
     align-items: center;
@@ -58,72 +43,62 @@ body {
 }
 
 .main-nav a {
-    color: #444444;
+    display: inline-block;
+    color: #6b1f2a;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    font-weight: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
     text-decoration: none;
     white-space: nowrap;
 }
 
 .main-nav a:hover {
     color: #6b1f2a;
+    text-decoration: underline;
 }
 
-/* ---------------------------------------------------------
-   GENERAL HEADINGS
-   --------------------------------------------------------- */
-
-h1,
-h2,
-h3 {
+/* GENERAL HEADINGS */
+h1, h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     color: #222222;
 }
 
-h1 {
-    font-size: 27px;
-    line-height: 1.25;
-    margin: 0 0 8px;
-}
+h1 { font-size: 27px; line-height: 1.25; margin: 0 0 8px; }
+h2 { font-size: 18px; line-height: 1.35; margin: 0 0 14px; }
+h3 { font-size: 15px; line-height: 1.4; margin: 0 0 6px; }
 
-h2 {
-    font-size: 18px;
-    line-height: 1.35;
-    margin: 0 0 14px;
-}
+a { color: #6b1f2a; }
+a:hover { text-decoration: underline; }
 
-h3 {
-    font-size: 15px;
-    line-height: 1.4;
-    margin: 0 0 6px;
-}
-
-/* ---------------------------------------------------------
-   LINKS
-   --------------------------------------------------------- */
-
-a {
-    color: #6b1f2a;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* ---------------------------------------------------------
-   HOMEPAGE INTRODUCTION
-   --------------------------------------------------------- */
-
+/* HOMEPAGE INTRODUCTION */
 .academic-intro {
     padding: 38px 0 32px;
     border-bottom: 1px solid #dddddd;
 }
 
 .intro-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 150px;
-    gap: 55px;
-    align-items: start;
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.intro-photo {
+    flex: 0 0 260px;
+}
+
+.intro-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .academic-intro h1 {
@@ -147,10 +122,7 @@ a:hover {
     color: #3f3f3f;
 }
 
-/* ---------------------------------------------------------
-   PHOTO
-   --------------------------------------------------------- */
-
+/* PHOTO */
 .intro-photo img,
 .profile-photo {
     width: 150px;
@@ -159,10 +131,7 @@ a:hover {
     display: block;
 }
 
-/* ---------------------------------------------------------
-   GENERAL SECTIONS
-   --------------------------------------------------------- */
-
+/* GENERAL SECTIONS */
 .section,
 .academic-section {
     padding: 28px 0;
@@ -174,10 +143,21 @@ a:hover {
     margin-bottom: 14px;
 }
 
-/* ---------------------------------------------------------
-   RESEARCH
-   --------------------------------------------------------- */
+/* PAGE HEADERS — unified across About, Research, Teaching, CV and Contact */
+.page-title,
+.section-label {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: #6b1f2a;
+    margin: 0 0 22px;
+}
 
+/* RESEARCH */
 .research-list,
 .research-grid {
     display: grid;
@@ -205,18 +185,8 @@ a:hover {
     color: #5b5b5b;
 }
 
-
-
-
-
-
-/* ---------------------------------------------------------
-   BUTTONS
-   --------------------------------------------------------- */
-
-.button-row {
-    margin-top: 15px;
-}
+/* BUTTONS — reference typography */
+.button-row { margin-top: 15px; }
 
 .button {
     display: inline-block;
@@ -224,7 +194,11 @@ a:hover {
     margin-right: 5px;
     border: 1px solid #6b1f2a;
     color: #6b1f2a;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    font-weight: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
     text-decoration: none;
 }
 
@@ -234,10 +208,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* ---------------------------------------------------------
-   FOOTER
-   --------------------------------------------------------- */
-
+/* FOOTER */
 .site-footer,
 .academic-footer {
     margin-top: 0;
@@ -246,132 +217,20 @@ a:hover {
     font-size: 12px;
 }
 
-/* ---------------------------------------------------------
-   MOBILE
-   --------------------------------------------------------- */
-
-@media (max-width: 800px) {
-
-    .container {
-        width: 90%;
-    }
-
-    .header-inner {
-        min-height: auto;
-        padding: 13px 0;
-    }
-
-    .main-nav {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 7px 15px;
-    }
-
- .intro-layout {
-    grid-template-columns: 1fr 100px;
-    gap: 18px;
-    align-items: start;
-}
-
-@media (max-width: 800px) {
-
-    .container {
-        width: 92%;
-    }
-
-    .header-inner {
-        min-height: auto;
-        padding: 13px 0;
-    }
-
-    .main-nav {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 7px 15px;
-    }
-
-    /* Profile section */
-
-    .intro-layout {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) 105px;
-        gap: 18px;
-        align-items: start;
-    }
-
-    .intro-text {
-        min-width: 0;
-    }
-
-    .intro-photo {
-        order: 0;
-        width: 105px;
-    }
-
-    .intro-photo img,
-    .profile-photo {
-        display: block;
-        width: 105px;
-        height: 130px;
-        object-fit: cover;
-        object-position: center top;
-    }
-
-    /* Keep the remaining content comfortable on mobile */
-
-    .academic-intro h1 {
-        font-size: 24px;
-    }
-
-    .research-list,
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-    .research-list,
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .academic-intro h1 {
-        font-size: 24px;
-    }
-}
-/* =========================================================
-   PROFILE / ACADEMIC INTRO
-   Keep photo beside text on mobile and allow text to
-   continue naturally below the bottom of the photo.
-   ========================================================= */
-
-.intro-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 35px;
-}
-
-.intro-text {
-    flex: 1;
-    min-width: 0;
-}
-
-.intro-photo {
-    flex: 0 0 260px;
-}
-
-.intro-photo img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-
-/* ---------------------------------------------------------
-   MOBILE
-   --------------------------------------------------------- */
-
+/* MOBILE */
 @media (max-width: 768px) {
+    .container { width: 92%; }
+
+    .header-inner {
+        min-height: auto;
+        padding: 13px 0;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 7px 15px;
+    }
 
     .intro-layout {
         display: block;
@@ -396,50 +255,24 @@ a:hover {
         width: auto;
     }
 
-    .academic-label {
-        padding-top: 0;
-    }
-
-    .intro-text h2 {
-        margin-top: 8px;
-    }
+    .academic-label { padding-top: 0; }
+    .intro-text h2 { margin-top: 8px; }
 
     .academic-position,
     .academic-statement {
         line-height: 1.6;
     }
 
-    /* Clear the float after the complete profile section */
     .intro-layout::after {
         content: "";
         display: table;
         clear: both;
     }
-}
 
-/* =========================================================
-   PAGE TITLE FONT — MATCH TOP NAVIGATION
-   ABOUT | RESEARCH | TEACHING | CV
-   ========================================================= */
+    .academic-intro h1 { font-size: 24px; }
 
-.academic-section > .container > h1,
-.academic-section > .container > h2,
-.section > .container > h1,
-.section > .container > h2,
-.page-title {
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-weight: normal !important;
-    letter-spacing: normal !important;
-    color: #222222;
-}
-
-.page-title {
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 20px !important;
-    font-weight: 600 !important;
-    line-height: 1.3 !important;
-    letter-spacing: 0.10em !important;
-    text-transform: uppercase !important;
-    color: #6b1f2a !important;
-    margin: 0 0 22px !important;
+    .research-list,
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
 }
