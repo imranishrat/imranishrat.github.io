@@ -2,7 +2,6 @@
    IMRAN ISHRAT — ACADEMIC WEBSITE
    Master stylesheet
    ========================================================= */
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; padding: 0; background: #ffffff; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.6; }
@@ -10,7 +9,7 @@ body { margin: 0; padding: 0; background: #ffffff; color: #333333; font-family: 
 .site-header { background: #ffffff; border-bottom: 1px solid #dddddd; }
 .header-inner { min-height: 56px; display: flex; align-items: center; justify-content: flex-end; }
 .main-nav { display: flex; align-items: center; gap: 22px; }
-.main-nav a { display: inline-block; color: #6b1f2a; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; line-height: 1.4; letter-spacing: normal; text-decoration: none; white-space: nowrap; }
+.main-nav a { display: inline-block; color: #6b1f2a; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; line-height: 1.4; text-decoration: none; white-space: nowrap; }
 .main-nav a:hover { color: #6b1f2a; text-decoration: underline; }
 h1, h2, h3, .page-title, .section-label, .academic-section h2, .academic-section h3, .research-item h3, .research-list h3, .research-card h3, .teaching-area-heading { font-family: Arial, Helvetica, sans-serif; color: #6b1f2a !important; }
 h1 { font-size: 27px; line-height: 1.25; margin: 0 0 8px; }
@@ -46,13 +45,16 @@ a:hover { text-decoration: underline; }
 .sdg-intro { max-width: 900px; margin: 0 0 22px; color: #555555; font-size: 13px; }
 .sdg-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 .sdg-card { padding: 18px; border: 1px solid #dddddd; background: #fafafa; }
-/* Compact SDG logos: intentionally much smaller than the accompanying headings/body text. */
-.sdg-card .sdg-logo-image { display: block; width: 36px !important; height: 36px !important; max-width: 36px !important; max-height: 36px !important; object-fit: contain; margin: 0 0 10px 0; }
 .sdg-card h4 { margin: 0 0 8px; color: #6b1f2a; font-size: 14px; line-height: 1.45; font-weight: 600; }
 .sdg-card p { margin: 0; color: #555555; font-size: 13px; line-height: 1.6; }
 
+/* ACADEMIC PROFILE LINKS */
+.profile-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.profile-links a { display: inline-block; padding: 7px 13px; border: 1px solid #6b1f2a; color: #6b1f2a; font-size: 12px; line-height: 1.4; text-decoration: none; }
+.profile-links a:hover { background: #6b1f2a; color: #ffffff; text-decoration: none; }
+
 .button-row { margin-top: 18px; }
-.button { display: inline-block; padding: 5px 11px; margin-right: 5px; border: 1px solid #6b1f2a; color: #6b1f2a; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; line-height: 1.4; letter-spacing: normal; text-decoration: none; }
+.button { display: inline-block; padding: 5px 11px; margin-right: 5px; border: 1px solid #6b1f2a; color: #6b1f2a; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; line-height: 1.4; text-decoration: none; }
 .button:hover { background: #6b1f2a; color: #ffffff; text-decoration: none; }
 .site-footer, .academic-footer { margin-top: 0; padding: 24px 0; color: #666666; font-size: 12px; }
 
@@ -70,6 +72,6 @@ a:hover { text-decoration: underline; }
     .research-list, .research-grid { grid-template-columns: 1fr; }
     .teaching-area-heading { margin-top: 32px; }
     .news-item { padding: 9px 0 11px; }
-    .sdg-grid { grid-template-columns: 1fr; gap: 16px; }
-    .sdg-card .sdg-logo-image { width: 32px !important; height: 32px !important; max-width: 32px !important; max-height: 32px !important; margin-bottom: 8px; }
+    .profile-links { gap: 8px; }
+    .profile-links a { font-size: 11px; padding: 6px 10px; }
 }
