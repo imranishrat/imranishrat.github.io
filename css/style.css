@@ -55,10 +55,10 @@ a:hover { text-decoration: underline; }
 .button:hover { background: #6b1f2a; color: #ffffff; text-decoration: none; }
 .site-footer, .academic-footer { margin-top: 0; padding: 24px 0; color: #666666; font-size: 12px; }
 @media (max-width: 768px) {
-    .container { width: 92%; }
-    .header-inner { min-height: auto; padding: 13px 0; }
-    .main-nav { flex-wrap: wrap; justify-content: flex-start; gap: 7px 10px; }
-    .main-nav a { padding: 6px 10px; }
+    .container { width: 96%; }
+    .header-inner { min-height: auto; padding: 8px 0; }
+    .main-nav { flex-wrap: nowrap; justify-content: space-between; gap: 3px; width: 100%; }
+    .main-nav a { flex: 1 1 auto; text-align: center; font-size: 10px; padding: 5px 2px; }
     .intro-layout { display: block; position: relative; }
     .intro-photo { float: right; width: 115px; max-width: 115px; margin: 0 0 10px 18px; }
     .intro-photo img { width: 115px; height: 145px; margin: 0; }
