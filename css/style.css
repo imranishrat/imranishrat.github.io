@@ -8,8 +8,8 @@ body { margin: 0; padding: 0; background: #ffffff; color: #333333; font-family: 
 .container { width: 92%; max-width: 1180px; margin: 0 auto; }
 .site-header { background: #ffffff; border-bottom: 1px solid #dddddd; }
 .header-inner { min-height: 56px; display: flex; align-items: center; justify-content: flex-end; }
-.main-nav { display: flex; align-items: center; gap: 22px; }
-.main-nav a { display: inline-block; color: #6b1f2a; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; line-height: 1.4; text-decoration: none; white-space: nowrap; }
+.main-nav { display: flex; align-items: center; gap: 20px; }
+.main-nav a { display: inline-block; color: #6b1f2a; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; line-height: 1.4; text-decoration: none; white-space: nowrap; padding: 5px 2px; }
 .main-nav a:hover { color: #6b1f2a; text-decoration: underline; }
 h1, h2, h3, .page-title, .section-label, .academic-section h2, .academic-section h3, .research-item h3, .research-list h3, .research-card h3, .teaching-area-heading { font-family: Arial, Helvetica, sans-serif; color: #6b1f2a !important; }
 h1 { font-size: 27px; line-height: 1.25; margin: 0 0 8px; }
