@@ -7,9 +7,11 @@
    <link rel="stylesheet" href="css/style.css?v=20260815">
     <style>
         .contact-link { display: inline-flex; align-items: center; gap: 8px; }
-        .contact-icon { width: 22px; height: 22px; vertical-align: middle; }
-        .envelope-icon { font-size: 22px; line-height: 1; display: inline-block; text-decoration: none !important; border-bottom: none !important; }
+        .contact-icon { width: 22px; height: 22px; display: block; }
+        .envelope-icon { width: 22px; height: 22px; font-size: 22px; line-height: 22px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none !important; border-bottom: none !important; }
         .contact-link:hover .envelope-icon, .contact-link:focus .envelope-icon { text-decoration: none !important; border-bottom: none !important; }
+        .contact-details p { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .contact-details p > .contact-link + .contact-link { margin-left: 0; }
     </style>
 </head>
 <body>
@@ -34,7 +36,7 @@
         <p>I welcome opportunities for research collaboration, visiting faculty engagements and postgraduate supervision.</p>
 
         <div class="contact-details">
-           <p><a class="contact-link" href="mailto:imran.ishrat@ara.ac.nz" aria-label="Email Dr Imran Ishrat"><span class="envelope-icon" aria-hidden="true">✉</span> imran.ishrat@ara.ac.nz</a> |
+           <p><a class="contact-link" href="mailto:imran.ishrat@ara.ac.nz" aria-label="Email Dr Imran Ishrat"><span class="envelope-icon" aria-hidden="true">✉</span> imran.ishrat@ara.ac.nz</a>
             <a class="contact-link" href="https://www.linkedin.com/in/imran-ishrat-phd-a073ba5/" target="_blank" rel="noopener noreferrer" aria-label="Dr Imran Ishrat on LinkedIn"><img class="contact-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"> LinkedIn Profile</a></p>
           
         </div>
