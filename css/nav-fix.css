@@ -1,0 +1,2 @@
+/* Keep the navigation in exactly the same horizontal position on every page. */
+body { overflow-y: scroll; }
