@@ -102,3 +102,24 @@ html, body, main { background: #121212 !important; color: #F2F2F2; }
 /* Featured-book DOI — match the publication DOI exactly without affecting other featured-book content */
 .academic-section .featured-book-content p a[href*="doi.org"] { color: #FFFFFF !important; border: 1px solid #4A90E2 !important; padding: 2px 7px !important; display: inline-block !important; line-height: 1.2 !important; border-radius: 2px !important; text-decoration: none !important; background: transparent !important; transition: background-color .18s ease, color .18s ease, border-color .18s ease !important; }
 .academic-section .featured-book-content p a[href*="doi.org"]:hover, .academic-section .featured-book-content p a[href*="doi.org"]:focus, .academic-section .featured-book-content p a[href*="doi.org"]:active { background: #4A90E2 !important; color: #FFFFFF !important; border-color: #4A90E2 !important; text-decoration: none !important; }
+/* Inderscience DOI link */
+.publication-item a[href*="inderscience.com/info/e_inarticle.php?artid=28790"] {
+    color: #FFFFFF !important;
+    border: 1px solid #4A90E2 !important;
+    padding: 2px 7px !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+    border-radius: 2px !important;
+    text-decoration: none !important;
+    background: transparent !important;
+    transition: background-color .18s ease, color .18s ease, border-color .18s ease !important;
+}
+
+.publication-item a[href*="inderscience.com/info/e_inarticle.php?artid=28790"]:hover,
+.publication-item a[href*="inderscience.com/info/e_inarticle.php?artid=28790"]:focus,
+.publication-item a[href*="inderscience.com/info/e_inarticle.php?artid=28790"]:active {
+    background: #4A90E2 !important;
+    color: #FFFFFF !important;
+    border-color: #4A90E2 !important;
+    text-decoration: none !important;
+}
