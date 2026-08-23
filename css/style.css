@@ -71,6 +71,8 @@ a:hover { color: #ffffff; text-decoration: underline; }
     .news-item { padding: 9px 0 11px; }
     .profile-links { gap: 8px; }
     .profile-links a { font-size: 11px; padding: 6px 10px; }
+    .publication-item a[href*="doi.org"] { color:#FFFFFF !important; border:1px solid #4A90E2 !important; background:transparent !important; text-decoration:none !important; }
+    .publication-item a[href*="doi.org"]:hover, .publication-item a[href*="doi.org"]:focus, .publication-item a[href*="doi.org"]:active { color:#FFFFFF !important; border-color:#4A90E2 !important; background:#4A90E2 !important; text-decoration:none !important; }
 }
 
 /* =========================================================
