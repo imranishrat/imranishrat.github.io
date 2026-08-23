@@ -123,24 +123,24 @@ html, body, main { background: #121212 !important; color: #F2F2F2; }
     border-color: #4A90E2 !important;
     text-decoration: none !important;
 }
-@media (max-width: 768px) {
-    .publication-item a[href*="inderscience.com/info/e_inarticle.php?artid=28790"] {
+@media (max-width: 767px) {
+    .publication-item a[href="https://www.inderscience.com/info/e_inarticle.php?artid=28790"] {
         color: #FFFFFF !important;
         border: 1px solid #4A90E2 !important;
+        background: transparent !important;
+        text-decoration: none !important;
         padding: 2px 7px !important;
         display: inline-block !important;
         line-height: 1.2 !important;
         border-radius: 2px !important;
-        text-decoration: none !important;
-        background: transparent !important;
     }
 
-    .publication-item a[href*="inderscience.com/info/e_inarticle.php?artid=28790"]:hover,
-    .publication-item a[href*="inderscience.com/info/e_inarticle.php?artid=28790"]:focus,
-    .publication-item a[href*="inderscience.com/info/e_inarticle.php?artid=28790"]:active {
-        background: #4A90E2 !important;
+    .publication-item a[href="https://www.inderscience.com/info/e_inarticle.php?artid=28790"]:hover,
+    .publication-item a[href="https://www.inderscience.com/info/e_inarticle.php?artid=28790"]:focus,
+    .publication-item a[href="https://www.inderscience.com/info/e_inarticle.php?artid=28790"]:active {
         color: #FFFFFF !important;
         border-color: #4A90E2 !important;
+        background: #4A90E2 !important;
         text-decoration: none !important;
     }
 }
