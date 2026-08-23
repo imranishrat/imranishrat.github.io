@@ -36,83 +36,18 @@ body { overflow-y: scroll; }
     padding: 0 !important;
   }
   .main-nav > a,
-  .main-nav > .dropdown {
-    display: block !important;
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-  }
+  .main-nav > .dropdown { display: block !important; width: auto !important; min-width: 0 !important; max-width: none !important; margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
   .main-nav > a,
-  .main-nav > .dropdown > a {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    height: 32px !important;
-    min-height: 32px !important;
-    max-height: 32px !important;
-    box-sizing: border-box !important;
-    margin: 0 !important;
-    padding: 4px 1px !important;
-    text-align: center !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    font-size: 9px !important;
-    line-height: 1 !important;
-    border-radius: 2px !important;
-    transform: none !important;
-  }
+  .main-nav > .dropdown > a { display: flex !important; align-items: center !important; justify-content: center !important; width: 100% !important; height: 32px !important; min-height: 32px !important; max-height: 32px !important; box-sizing: border-box !important; margin: 0 !important; padding: 4px 1px !important; text-align: center !important; white-space: nowrap !important; overflow: hidden !important; font-size: 9px !important; line-height: 1 !important; border-radius: 2px !important; transform: none !important; }
   .main-nav > .dropdown { position: relative !important; }
-  .main-nav .dropdown-menu {
-    position: absolute !important;
-    top: calc(100% + 2px) !important;
-    left: 0 !important;
-    right: auto !important;
-    width: max-content !important;
-    min-width: 180px !important;
-    max-width: calc(100vw - 20px) !important;
-    margin: 0 !important;
-    padding: 4px 0 !important;
-    box-sizing: border-box !important;
-    z-index: 9999 !important;
-    overflow: hidden !important;
-  }
-  .main-nav .dropdown-menu a {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 30px !important;
-    max-height: none !important;
-    box-sizing: border-box !important;
-    margin: 0 !important;
-    padding: 7px 12px !important;
-    text-align: left !important;
-    white-space: nowrap !important;
-    font-size: 12px !important;
-    line-height: 1.2 !important;
-    transform: none !important;
-  }
+  .main-nav .dropdown-menu { position: absolute !important; top: calc(100% + 2px) !important; left: 0 !important; right: auto !important; width: max-content !important; min-width: 180px !important; max-width: calc(100vw - 20px) !important; margin: 0 !important; padding: 4px 0 !important; box-sizing: border-box !important; z-index: 9999 !important; overflow: hidden !important; }
+  .main-nav .dropdown-menu a { display: block !important; width: 100% !important; height: auto !important; min-height: 30px !important; max-height: none !important; box-sizing: border-box !important; margin: 0 !important; padding: 7px 12px !important; text-align: left !important; white-space: nowrap !important; font-size: 12px !important; line-height: 1.2 !important; transform: none !important; }
 }
 
 /* Featured book DOI — match publication DOI treatment */
-.featured-book-content p a[href*="doi.org"] {
-  color: #FFFFFF !important;
-  border: 1px solid #4A90E2 !important;
-  padding: 2px 7px !important;
-  display: inline-block !important;
-  line-height: 1.2 !important;
-  border-radius: 2px !important;
-  text-decoration: none !important;
-  background: transparent !important;
-  transition: background-color .18s ease, color .18s ease, border-color .18s ease !important;
-}
+.featured-book-content p a[href*="doi.org"] { color: #FFFFFF !important; border: 1px solid #4A90E2 !important; padding: 2px 7px !important; display: inline-block !important; line-height: 1.2 !important; border-radius: 2px !important; text-decoration: none !important; background: transparent !important; transition: background-color .18s ease, color .18s ease, border-color .18s ease !important; }
 .featured-book-content p a[href*="doi.org"]:hover,
-.featured-book-content p a[href*="doi.org"]:focus {
-  background: #4A90E2 !important;
-  color: #FFFFFF !important;
-  border-color: #4A90E2 !important;
-  text-decoration: none !important;
-}
+.featured-book-content p a[href*="doi.org"]:focus { background: #4A90E2 !important; color: #FFFFFF !important; border-color: #4A90E2 !important; text-decoration: none !important; }
+
+/* Publications page: remove only the maroon line beneath the main Publications heading. */
+.academic-section:has(.featured-book) .page-title:after { display: none !important; content: none !important; }
