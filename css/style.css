@@ -144,3 +144,41 @@ html, body, main { background: #121212 !important; color: #F2F2F2; }
         text-decoration: none !important;
     }
 }
+/* PDF links — same treatment as DOI links */
+.publication-item a.pdf-link {
+    color: #FFFFFF !important;
+    border: 1px solid #4A90E2 !important;
+    padding: 2px 7px !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+    border-radius: 2px !important;
+    text-decoration: none !important;
+    background: transparent !important;
+    transition: background-color .18s ease, color .18s ease, border-color .18s ease !important;
+}
+
+.publication-item a.pdf-link:hover,
+.publication-item a.pdf-link:focus,
+.publication-item a.pdf-link:active {
+    background: #4A90E2 !important;
+    color: #FFFFFF !important;
+    border-color: #4A90E2 !important;
+    text-decoration: none !important;
+}
+@media (max-width: 767px) {
+    .publication-item a.pdf-link {
+        color: #FFFFFF !important;
+        border: 1px solid #4A90E2 !important;
+        background: transparent !important;
+        text-decoration: none !important;
+    }
+
+    .publication-item a.pdf-link:hover,
+    .publication-item a.pdf-link:focus,
+    .publication-item a.pdf-link:active {
+        color: #FFFFFF !important;
+        border: 1px solid #4A90E2 !important;
+        background: #4A90E2 !important;
+        text-decoration: none !important;
+    }
+}
