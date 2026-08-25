@@ -20,21 +20,13 @@ body { overflow-y: scroll; }
 .main-nav .dropdown:focus-within .dropdown-menu,
 .main-nav .dropdown.open .dropdown-menu { display: block; }
 
-/* Mobile: six equal navigation cells. The grid deliberately uses fixed
-   equal columns so text length can never change a button's visual width. */
+/* Research dropdown: use the current wording consistently across every page. */
+.main-nav .dropdown-menu a[href="research.html#research-programme"] { font-size: 0 !important; }
+.main-nav .dropdown-menu a[href="research.html#research-programme"]::after { content: 'Current Research'; font-size: 12px; }
+
 @media (max-width: 768px) {
   .header-inner { width: 100% !important; padding: 6px 0 !important; }
-  .main-nav {
-    display: grid !important;
-    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
-    grid-auto-flow: column !important;
-    align-items: stretch !important;
-    justify-items: stretch !important;
-    gap: 2px !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+  .main-nav { display: grid !important; grid-template-columns: repeat(6, minmax(0, 1fr)) !important; grid-auto-flow: column !important; align-items: stretch !important; justify-items: stretch !important; gap: 2px !important; width: 100% !important; margin: 0 !important; padding: 0 !important; }
   .main-nav > a,
   .main-nav > .dropdown { display: block !important; width: auto !important; min-width: 0 !important; max-width: none !important; margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
   .main-nav > a,
@@ -44,16 +36,13 @@ body { overflow-y: scroll; }
   .main-nav .dropdown-menu a { display: block !important; width: 100% !important; height: auto !important; min-height: 30px !important; max-height: none !important; box-sizing: border-box !important; margin: 0 !important; padding: 7px 12px !important; text-align: left !important; white-space: nowrap !important; font-size: 12px !important; line-height: 1.2 !important; transform: none !important; }
 }
 
-/* Featured book DOI — match publication DOI treatment */
 .featured-book-content p a[href*="doi.org"] { color: #FFFFFF !important; border: 1px solid #4A90E2 !important; padding: 2px 7px !important; display: inline-block !important; line-height: 1.2 !important; border-radius: 2px !important; text-decoration: none !important; background: transparent !important; transition: background-color .18s ease, color .18s ease, border-color .18s ease !important; }
 .featured-book-content p a[href*="doi.org"]:hover,
 .featured-book-content p a[href*="doi.org"]:focus { background: #4A90E2 !important; color: #FFFFFF !important; border-color: #4A90E2 !important; text-decoration: none !important; }
 
-/* Publications page: remove only the maroon line beneath the main Publications heading. */
 .academic-section:has(.featured-book) .page-title:after { display: none !important; content: none !important; }
 
-/* LINZ logo in the homepage introduction */
 .linz-logo-icon {
-  content: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAHAABAAEFAQEAAAAAAAAAAAAAAAgDBAUGBwIB/8QAMhAAAgEDAgQEBAUFAQAAAAAAAQIDAAQFBhEHEiFBCBMxURQVImEjJDJScRZCYoGRov/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCGVKV7gUPMiMrsGYAhfU9e33oPFKkNpjwz5HJNb3smXE+KuohJDPFEUdQyuNnRuquj+WSvUEc2x6dclmvD3iJrexs8Vc3EGQvLW9ubdmbmDMkFvLHE2/oAXkXfoeo9dqCM9K37VPCzUGFxUOViX4u0fC22XlYIQYklcRlD6glXI79Qd/fbQmUqxVgQwOxBHUUHylKUCq+PlWC+gmcsFSRWJUbkAHsNxv8A9FUKUE7uGuqDFo+3dcnapDPEHiN1eyx8wI/tE6cgH2SQge9XF1qHzIrq+xwtbu6s8fNb2ZgnjljF1eTJDBBzozAyIkaltj6Nv3rlfhazdxcaMnxVnmc5hZLeTrLZQDIWrFj0M1uys0J/zXlRu55ga6Tm1GNtBkn1dp7I31q5miebG2uPWC5CMsc7cxDOV5yeXfr1oM1mMBaPhf6OiKyLPZWmnonI35li/EuJOnZU/wDWwqOHij0Xb4vO5XNWMVuZHyck+QMJ+i2E2wt4N/QyFY3lYducf77dea9TA6dxWnNP3UOoNfX8Xw1mgYPu8h55LyQruFjY/iL7oF6AVpHHTHW2J4XWvCvDsc1qET/N87fbfTAQrPJNK+2y7k7AE78oHuBQRSpSlApSlB1Hw/az03pfOyJqiyv1tXBaLJ4yaSK6smOwO5QgvEem6nfYgED13khheIfD/IXvw1hxa1pfvcAJFbLbmZlJ9vy5beoc6H1NktH6ntM/iTEbi2Y7xyrzRyoRsyOvdSOhFSowfFfinkHhfSnA6G0M0akzNG6I+43DBtkHL7dT/NAixD6b1p8/tL3MG/u9rWbL5GynnvEt2/THbI0EYe4ckICQwRfsK1/xJ6mx+H0pc6XM8VpdXzc7YazkDzc3T8xkJwfqk7iJenN1JYDasDxRymsbLMSzauTROk8lfRvBIuPlPzBVcfrZoi7AHpvzkAjeuAX0VxDdyxXYcTqx8zmO5399+/8ANBRpSlApSlAreNN8W+I2nMEuDw+q762x6AiOH6X8sHspYEqPsCBWj0oLjI315kr+a/v7mW6up3LyzSuWd2Pck+tXDZCO4x/w19B50kS8tvOrbOg/a37l9h6jsdulY+lApSlB/9k=") !important;
+  content: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBwUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABAAEADASIAAhEBAxEB/8QAHAABAAEFAQEAAAAAAAAAAAAAAAgDBAUGBwIB/8QAMhAAAgEDAgQEBAUFAQAAAAAAAQIDAAQFBhEHEiFBCBMxURQVImEjJDJScRZCYoGRov/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCGVKV7gUPMiMrsGYAhfU9e33oPFKkNpjwz5HJNb3smXE+KuohJDPFEUdQyuNnRuquj+WSvUEc2x6dclmvD3iJrexs8Vc3EGQvLW9ubdmbmDMkFvLHE2/oAXkXfoeo9dqCM9K37VPCzUGFxUOViX4u0fC22XlYIQYklcRlD6glXI79Qd/fbQmUqxVgQwOxBHUUHylKUCq+PlWC+gmcsFSRWJUbkAHsNxv8A9FUKUE7uGuqDFo+3dcnapDPEHiN1eyx8wI/tE6cgH2SQge9XF1qHzIrq+xwtbu6s8fNb2ZgnjljF1eTJDBBzozAyIkaltj6Nv3rlfhazdxcaMnxVnmc5hZLeTrLZQDIWrFj0M1uys0J/zXlRu55ga6Tm1GNtBkn1dp7I31q5miebG2uPWC5CMsc7cxDOV5yeXfr1oM1mMBaPhf6OiKyLPZWmnonI35li/EuJOnZU/wDWwqOHij0Xb4vO5XNWMVuZHyck+QMJ+i2E2wt4N/QyFY3lYducf77dea9TA6dxWnNP3UOoNfX8Xw1mgYPu8h55LyQruFjY/iL7oF6AVpHHTHW2J4XWvCvDsc1qET/N87fbfTAQrPJNK+2y7k7AE78oHuBQRSpSlApSlB1Hw/az03pfOyJqiyv1tXBaLJ4yaSK6smOwO5QgvEem6nfYgED13khheIfD/IXvw1hxa1pfvcAJFbLbmZlJ9vy5beoc6H1NktH6ntM/iTEbi2Y7xyrzRyoRsyOvdSOhFSowfFfinkHhfSnA6G0M0akzNG6I+43DBtkHL7dT/NAixD6b1p8/tL3MG/u9rWbL5GynnvEt2/THbI0EYe4ckICQwRfsK1/xJ6mx+H0pc6XM8VpdXzc7YazkDzc3T8xkJwfqk7iJenN1JYDasDxRymsbLMSzauTROk8lfRvBIuPlPzBVcfrZoi7AHpvzkAjeuAX0VxDdyxXYcTqx8zmO5399+/8ANBRpSlApSlAreNN8W+I2nMEuDw+q762x6AiOH6X8sHspYEqPsCBWj0oLjI315kr+a/v7mW6up3LyzSuWd2Pck+tXDZCO4x/w19B50kS8tvOrbOg/a37l9h6jsdulY+lApSlB/9k=") !important;
   object-fit: contain !important;
 }
